@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a380a3b06dbce128c7fff4e3266dca7f108327365bd6fa9d3760b3d3e820ee3f
-size 389
+CREATE DATABASE IF NOT EXISTS `assignment-5`;
+USE `assignment-5`;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  age INT
+);
+
+INSERT INTO users (username, email, age) VALUES
+('ahmed', 'ahmed@gmail.com', 26),
+('peter', 'peter@gmail.com', 30),
+('alex', 'alex@gmail.com', 28);

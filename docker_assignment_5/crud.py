@@ -1,5 +1,5 @@
-from database import SessionLocal
 from models import User
+from database import SessionLocal
 
 def get_all_users():
     session = SessionLocal()
@@ -14,6 +14,8 @@ def find_user_by_username(username: str):
         return session.query(User).filter(User.username == username).first()
     finally:
         session.close()
+
+
 
 def insert_user(username: str, email: str, age: int):
     session = SessionLocal()

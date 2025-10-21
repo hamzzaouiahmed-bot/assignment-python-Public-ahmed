@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   mariadb:
     image: mariadb:10.11
@@ -7,7 +6,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ahmed
-      MYSQL_DATABASE: assignment_5
+      MYSQL_DATABASE: assignment-5
       MYSQL_USER: user
       MYSQL_PASSWORD: ahmed
     ports:
