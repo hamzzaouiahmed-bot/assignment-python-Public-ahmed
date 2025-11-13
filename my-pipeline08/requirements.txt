@@ -1,0 +1,5 @@
+pandas
+requests
+mysql-connector-python
+pymongo
+beautifulsoup4
